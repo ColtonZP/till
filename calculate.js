@@ -13,5 +13,5 @@ function cal(){
     document.getElementById("10rt").innerHTML = ("$" + document.getElementById("10ra").value * 5);      var tot = tot + (document.getElementById("10ra").value * 5);
     document.getElementById("5rt").innerHTML = ("$" + document.getElementById("5ra").value * 2);        var tot = tot + (document.getElementById("5ra").value * 2);
     document.getElementById("1rt").innerHTML = ("$" + document.getElementById("1ra").value * .5);       var tot = tot + (document.getElementById("1ra").value * .5);
-    document.getElementById("totaled").innerHTML = (tot);
+    document.getElementById("totaled").innerHTML = ($ + tot);
 }
