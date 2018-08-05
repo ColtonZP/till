@@ -13,6 +13,6 @@ function cal(){
     document.getElementById("10rt").innerHTML = ("$" + document.getElementById("10ra").value * 5);          tot = tot + (document.getElementById("10ra").value * 5);
     document.getElementById("5rt").innerHTML = ("$" + document.getElementById("5ra").value * 2);            tot = tot + (document.getElementById("5ra").value * 2);
     document.getElementById("1rt").innerHTML = ("$" + (document.getElementById("1ra").value * 50)/100);     ctot = ctot + (document.getElementById("1ra").value * 50);
-    var ftot = tot + (ctot/100) + (ctot2/100);
+    var ftot = tot + (ctot/100);
     document.getElementById("totaled").innerHTML = ("$" + ftot);
 }
