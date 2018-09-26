@@ -2,4 +2,14 @@ textarea {
     resize: none;
     height: 1.2em;
     width: 4em;
+    border: 0;
  }
+
+ table {
+    border-collapse: collapse;
+    width: 15%;
+    text-align: left;
+ }
+
+ tr:nth-child(even), tr:nth-child(even) textarea{background-color: #ddd;}
+ tr:hover {background-color: #ccc;}

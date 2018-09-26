@@ -16,3 +16,11 @@ function cal(){
     var ftot = tot + (ctot/100);
     document.getElementById("totaled").innerHTML = ("$" + ftot);
 }
+
+function isNumberKey(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode
+        if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+
+        return true;
+}
