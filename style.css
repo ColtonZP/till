@@ -1,15 +1,21 @@
 input {
     resize: none;
-    height: 1.2em;
+    height: 2.4em;
     width: 4em;
     border: 0;
  }
 
  table {
     border-collapse: collapse;
-    width: 15%;
+    width: 20rem;
     text-align: left;
  }
 
  tr:nth-child(even), tr:nth-child(even) input{background-color: #ddd;}
  tr:hover {background-color: #ccc;}
+
+ @media screen and (max-width: 768px){
+    table{
+        width: 100%;
+    }
+}
