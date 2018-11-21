@@ -13,7 +13,7 @@ table.addEventListener('input', (event) => {
             total[i].textContent = '$' + calc(event.target.value, denArray[i]);
         }
     }
-    totalSum.textContent = addAll();
+    totalSum.textContent = '$' + addAll();
 });
 
 function calc(inp, den) {
