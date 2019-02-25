@@ -8,22 +8,22 @@ const totalSum = document.querySelector('#totalSum');
 
 table.addEventListener('input', (event) => {
     for (let i = 0; i < input.length; i++) {
-        if (event.target === input[i]) { 
+        if (event.target === input[i]) {
             total.textContent = '0';
-            total[i].textContent = '$' + calc(event.target.value, denArray[i]);
+            total[i].textContent = '$' + calc(event.target.value, denArray[i]).toFixed(2);
         }
     }
-    totalSum.textContent = '$' + addAll();
+    totalSum.textContent = '$' + addAll().toFixed(2);
 });
 
 function calc(inp, den) {
-    return ((inp * 100) * den)/100;
+    return ((inp * 100) * den) / 100;
 }
 
 function addAll() {
     sum = 0;
     for (let i = 0; i < total.length; i++) {
-        sum += Number(total[i].textContent.substr(1, total[i].textContent.length))*100;
+        sum += Number(total[i].textContent.substr(1, total[i].textContent.length)) * 100;
     }
-    return sum/100;
+    return sum / 100;
 }
